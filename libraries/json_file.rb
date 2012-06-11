@@ -34,5 +34,6 @@ class Chef::Resource::JsonFile < Chef::Resource::File
   def initialize(name, run_context=nil)
     super
     @resource_name = :json_file
+    @provider = Chef::Provider::JsonFile
   end
 end
